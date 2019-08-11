@@ -13,8 +13,7 @@ py.test
 you will need to have installed pytest;
 ## The web app
 ### Description
-The web app consists of a GUI where user can enter two dates; the javascript javascript handler part of the script
-redirects the request to the webserver which in turn parses and return the result ASYNC.
+The web app consists of a GUI where user can enter two dates; a javascript handler script makes a "POST" request to the app with information in the form and the webserver responds.
 ### to run
 You will need to have Flask installed; by doing sudo pip3 install Flask; go the webapp directory and enter:
 python3 application.py
