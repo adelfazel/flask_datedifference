@@ -1,0 +1,27 @@
+{% extends "layout.html"%}
+{% block pageTitle %}Date difference
+{% endblock %}
+{% block style %}
+<script src="{{ url_for('static',filename='js/jshandler.js') }}"></script>
+{% endblock %}
+{% block body %}
+<div>
+  <p>
+  Enter two days and see number of days between the two.
+</p>
+
+</div>
+
+<div>
+<form id="form">
+	<table>
+		<tr><td>Enter the first date:</td><td><input type="date" name="firstDate" id="firstDate"></tr>
+    <tr><td>Enter the second date:</td><td><input type="date" name="secondDate" id="secondDate"></tr>
+  	<tr><td>
+      <input type="submit" value="Get the difference" id="submit"></input></td>
+      <td id="result">Nothing To display</td>
+    </tr>
+	</table>
+</form>
+</div>
+{% endblock %}
